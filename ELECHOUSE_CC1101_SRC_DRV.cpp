@@ -293,7 +293,7 @@ void ELECHOUSE_CC1101::setSpi(void){
   SCK_PIN = 52; MISO_PIN = 50; MOSI_PIN = 51; SS_PIN = 53;
   #elif ESP8266
   SCK_PIN = 14; MISO_PIN = 12; MOSI_PIN = 13; SS_PIN = 15;
-  #elif ESP32
+  #elif defined ESP32
   SCK_PIN = 18; MISO_PIN = 19; MOSI_PIN = 23; SS_PIN = 5;
   #else
   SCK_PIN = 13; MISO_PIN = 12; MOSI_PIN = 11; SS_PIN = 10;
